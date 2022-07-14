@@ -12,6 +12,7 @@ import com.facebook.soloader.SoLoader;
 import com.bookingreactnative.newarchitecture.MainApplicationReactNativeHost;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+import com.facebook.reactnative.androidsdk.FBSDKPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -28,6 +29,9 @@ public class MainApplication extends Application implements ReactApplication {
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
+          // packages.add(new MainReactPackage());
+          // packages.add(new FBSDKPackage());
+          // packages.add(new TwitterSigninPackage());
           return packages;
         }
 

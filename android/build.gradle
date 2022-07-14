@@ -8,6 +8,8 @@ buildscript {
         minSdkVersion = 21
         compileSdkVersion = 31
         targetSdkVersion = 31
+        kotlin_version = '1.6.10' // <- add this line
+        googlePlayServicesAuthVersion = "19.2.0" // <--- use this version or newer
 
         if (System.properties['os.arch'] == "aarch64") {
             // For M1 Users we need to use the NDK 24 which added support for aarch64
@@ -23,8 +25,10 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:7.1.1")
+        classpath('com.google.gms:google-services:4.3.12')
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("de.undercouch:gradle-download-task:5.0.1")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version") // <- add this line
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -32,6 +36,7 @@ buildscript {
 
 allprojects {
     repositories {
+        google()
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url("$rootDir/../node_modules/react-native/android")
@@ -47,7 +52,6 @@ allprojects {
                 excludeGroup "com.facebook.react"
             }
         }
-        google()
         maven { url 'https://www.jitpack.io' }
     }
 }

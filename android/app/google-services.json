@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "963257289896",
+    "project_id": "bookingreactnative-b0062",
+    "storage_bucket": "bookingreactnative-b0062.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963257289896:android:1f4361daeca147f973869d",
+        "android_client_info": {
+          "package_name": "com.bookingreactnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963257289896-l6ehatfcgl4mhdtqnj1o83el40r921so.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookingreactnative",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "963257289896-bpj75ibvl14olvb8p94cujselomhchri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-FzO2cgc41qPr0Q5zcnjUEk2PTaTs1T8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963257289896-bpj75ibvl14olvb8p94cujselomhchri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

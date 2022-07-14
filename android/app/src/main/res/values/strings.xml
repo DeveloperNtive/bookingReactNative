@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">bookingReactNative</string>
+    <string name="facebook_app_id">601693141235940</string>
+    <string name="facebook_client_token">964a125a9dcee640e390fa453b1ddb5f</string>
 </resources>
